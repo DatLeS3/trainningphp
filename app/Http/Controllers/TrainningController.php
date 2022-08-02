@@ -22,7 +22,7 @@ class TrainningController extends Controller
             'message' => 'trainning created',
             'data' => $trainning,
         ], 201); //tu sua chua, add status
-    }//aaaa
+    }
 
     public function index(Request $request) // hien thi
     {
@@ -60,7 +60,7 @@ class TrainningController extends Controller
                 'status' => true,
                 'message' => 'trainning update',
                 'data' => $trainning,
-            ],200   );
+            ],200);
         }else{
             return response()->json([
                 'status' => false,
